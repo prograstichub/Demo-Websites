@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "uix-kit",
-  "alias": ["uix-kit.vercel.app"],
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "static",

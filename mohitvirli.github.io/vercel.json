@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "portfolio-3d",
-  "alias": ["portfolio-3d.vercel.app"],
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "framework": "nextjs"

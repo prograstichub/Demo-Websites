@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "game-website",
-  "alias": ["game-website.vercel.app"],
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite"

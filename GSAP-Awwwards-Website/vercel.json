@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "gsap-awwwards",
-  "alias": ["gsap-awwwards.vercel.app"],
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite"
