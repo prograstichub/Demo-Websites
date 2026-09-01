@@ -1,0 +1,19 @@
+/* ====================================================== 
+   <!-- Parallax -->                                           
+/* ====================================================== */
+@import '@uixkit/core/_global/scss/mixins';
+@import '@uixkit/core/_global/scss/functions';
+@import '@uixkit/core/_global/scss/variables';
+.uix-parallax {
+	position: relative;
+	width: 100%;
+	background-attachment: fixed;
+	@include background-cover();
+	
+	height: auto;
+	width: 100%;
+	
+	.uix-parallax__img {
+	    visibility: hidden;
+	}
+}

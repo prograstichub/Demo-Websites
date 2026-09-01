@@ -1,0 +1,22 @@
+/* ======================================================
+    <!-- Form -->
+/* ====================================================== */
+@import '@uixkit/core/_global/scss/mixins';
+@import '@uixkit/core/_global/scss/functions';
+@import '@uixkit/core/_global/scss/variables';@import '_variable-and-mixin.scss';
+
+
+/*
+ * 1. Date Picker ( 3rd Party Plugin )
+*/
+
+
+/*
+ ---------------------------
+ 1. Date Picker ( 3rd Party Plugin )
+ ---------------------------
+ */
+.uix-controls__date::after {
+	right: auto;
+	left: 1rem;
+}

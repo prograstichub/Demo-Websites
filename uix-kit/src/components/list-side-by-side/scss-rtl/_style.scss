@@ -1,0 +1,23 @@
+/* ======================================================
+   <!-- Side by Side List -->
+/* ====================================================== */
+@import '@uixkit/core/_global/scss/mixins';
+@import '@uixkit/core/_global/scss/functions';
+@import '@uixkit/core/_global/scss/variables';
+
+dl.uix-list-abreast {
+
+	dt {
+		float: right;
+		clear: right;
+		text-align: left;
+	}
+
+	dd {
+		float: right;
+		text-align: right;
+		padding-left: auto;
+		padding-right: 1rem;
+	}
+
+}

@@ -1,0 +1,27 @@
+{
+  "name": "sourav-ranjan-verma-portfolio",
+  "version": "1.0.0",
+  "description": "Sourav Ranjan Verma - Full Stack Developer Portfolio & Projects",
+  "author": {
+    "name": "Sourav Ranjan Verma",
+    "email": "sourav2000ranjan@gmail.com",
+    "url": "https://github.com/sourav-ranjan-verma"
+  },
+  "private": true,
+  "workspaces": [
+    "adeolaadeoti-portfolio",
+    "game-website",
+    "mohitvirli.github.io",
+    "uix-kit",
+    "GSAP-Awwwards-Website",
+    "gsap_cocktails",
+    "gsap_macbook_landing",
+    "motion-website",
+    "Portfolio-Website"
+  ],
+  "scripts": {
+    "install-all": "npm install --workspaces",
+    "dev": "npm run dev --workspace=game-website",
+    "build-all": "npm run build --workspaces"
+  }
+}

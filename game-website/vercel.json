@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "game-website",
+  "alias": ["game-website.vercel.app"],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "env": {
+    "VITE_API_URL": "@vite-api-url"
+  }
+}

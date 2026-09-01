@@ -1,0 +1,31 @@
+/* ======================================================
+   <!-- Back to Top -->
+/* ====================================================== */
+@import '@uixkit/core/_global/scss/mixins';
+@import '@uixkit/core/_global/scss/functions';
+@import '@uixkit/core/_global/scss/variables';
+#uix-to-top {
+	transform: scale(0);
+	position: fixed;
+	bottom: 12px;
+	right: 12px;
+	width: 50px;
+	height: 50px;
+	z-index: 1;
+	text-align: center;
+
+	i {
+		font-size: 1.5rem;
+	}
+
+	&.is-active {
+		transform: scale(1);
+	}
+
+	&:active,
+	&:focus {
+	    outline: none;
+	}
+
+
+}

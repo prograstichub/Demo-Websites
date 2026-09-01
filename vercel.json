@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "name": "sourav-portfolio",
+      "path": "adeolaadeoti-portfolio",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist"
+    },
+    {
+      "name": "game-website",
+      "path": "game-website",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist"
+    },
+    {
+      "name": "portfolio-3d",
+      "path": "mohitvirli.github.io",
+      "buildCommand": "npm run build",
+      "outputDirectory": ".next"
+    },
+    {
+      "name": "uix-kit",
+      "path": "uix-kit",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist"
+    },
+    {
+      "name": "gsap-awwwards",
+      "path": "GSAP-Awwwards-Website",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist"
+    },
+    {
+      "name": "gsap-cocktails",
+      "path": "gsap_cocktails",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist"
+    },
+    {
+      "name": "gsap-macbook",
+      "path": "gsap_macbook_landing",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist"
+    },
+    {
+      "name": "motion-website",
+      "path": "motion-website",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist"
+    },
+    {
+      "name": "portfolio-website",
+      "path": "Portfolio-Website",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+/* ======================================================
+   <!-- Text effect -->
+/* ====================================================== */
+@import '@uixkit/core/_global/scss/mixins';
+@import '@uixkit/core/_global/scss/functions';
+@import '@uixkit/core/_global/scss/variables';
+.uix-letter {
+	transform-origin: 50% 100%;
+	display: inline-block;
+	line-height: 1;
+}

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(chmod +x /private/tmp/claude-501/-Users-codknoxbackend-Desktop-gsap/2707fa8a-ae90-4c22-861c-2dad2d4c23f1/scratchpad/DEPLOYMENT_COMMANDS.sh)",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git rm *)"
+    ]
+  }
+}

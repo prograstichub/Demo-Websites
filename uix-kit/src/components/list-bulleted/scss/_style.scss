@@ -1,0 +1,13 @@
+/* ======================================================
+   <!-- Bulleted List -->
+/* ====================================================== */
+@import '@uixkit/core/_global/scss/mixins';
+@import '@uixkit/core/_global/scss/functions';
+@import '@uixkit/core/_global/scss/variables';
+
+.uix-list-bullet {
+
+	i {
+		margin-right: .5rem;
+	}
+}

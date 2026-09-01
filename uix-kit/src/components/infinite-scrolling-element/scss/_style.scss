@@ -1,0 +1,20 @@
+/* ======================================================
+       <!-- Infinite Scrolling Element -->
+/* ====================================================== */
+@import '@uixkit/core/_global/scss/mixins';
+@import '@uixkit/core/_global/scss/functions';
+@import '@uixkit/core/_global/scss/variables';
+
+.uix-infinite-scrolling {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+
+	ul {
+
+		li {
+            position: absolute;
+            transition: none;
+		}
+	}
+}

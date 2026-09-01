@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "motion-website",
+  "alias": ["motion-website.vercel.app"],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite"
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="@@{website_lang}" dir="@@{website_dirLTR}">
+<head>
+	<meta charset="@@{website_charset}" />
+	<title>Toast - @@{website_title}</title>	
+	@@include('./src/components/_global/include-header.html')
+</head>  
+
+     
+  <body class="page">
+  
+  
+          
+    @@include('./src/components/_global/include-loader.html')
+    @@include('./src/components/_global/include-toggle-trigger.html')
+    
+    
+
+  
+  
+    <div class="uix-wrapper">
+    
+        <!-- Header Area
+        ============================================= -->      
+        <header class="uix-header__container">
+            
+             <div class="uix-header">
+                 <div class="container">
+                 
+                        @@include('./src/components/_global/include-brand.html')
+                        
+                        @@include('./src/components/_global/include-menu.html')
+                        
+                        
+                        
+                        
+                  </div>
+                  <!-- .container end -->
+                  
+                  <div class="uix-clearfix"></div>
+             </div>
+        
+        </header>
+        <div class="uix-header__placeholder js-uix-header__placeholder-autoheight"></div>
+      
+      
+		<main id="uix-maincontent">
+			
+			<!-- Content 
+			====================================================== -->
+			<section class="uix-spacing--s uix-spacing--no-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h3>Toast</h3>
+							<p>Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by mobile and desktop operating systems.</p>
+
+
+                            <button class="btn btn-sm btn-outline-primary mb-2" onclick="showCustomToast1()">Custom Toast 1 (Only one is shown)</button><br />
+                            <button class="btn btn-sm btn-outline-primary mb-2" onclick="showCustomToast2()">Custom Toast 2</button><br />
+                            <button class="btn btn-sm btn-outline-primary mb-2" onclick="showCustomToast3()">Custom Toast 3</button><br />
+                            <button class="btn btn-sm btn-outline-primary mb-2" onclick="showCustomToast4()">Custom Toast 4</button><br />
+                            <button class="btn btn-sm btn-outline-primary mb-2" onclick="showCustomToast5()">Custom Toast 5</button><br />
+                            <button class="btn btn-sm btn-outline-primary mb-2" onclick="showCustomToast6()">Custom Toast 6</button><br />
+
+
+                            <p class="mt-3"><strong>Use the following JavaScript code to fire it.</strong></p>
+
+
+<pre class="uix-precode uix-t-l"><label>JS</label><code>const showCustomToast1 = () => {
+
+    window.UixToast({
+        actionId: 'test-1',
+        title: "Custom Toast 1",
+        message: `<div>Text here (${Math.random()})</div>`,
+        autoCloseTime: 1000,
+        theme: 'warning',
+        schemeHeader: 'bg-transparent text-light',
+        onlyShowOne: true
+    });
+};
+
+
+const showCustomToast2 = () => {
+    window.UixToast({
+        actionId: 'test-2',
+        title: "Custom Toast 2",
+        message: `<div style="color:orange">Text here (${Math.random()})</div>`,
+        theme: "dark",
+        autoCloseTime: 5000,
+        direction: 'bottom-center',
+        schemeBody: 'align-items-center text-white border-0 p-2',
+        closeBtnColor: '#333',
+        hint: 'There are some warnings that need your attention',
+        hintAutoShow: false,
+        onClose: (currentElement, currentToastId) => {
+            console.log(currentElement, currentToastId);
+        }
+
+    });
+
+};
+
+const showCustomToast3 = () => {
+    window.UixToast({
+        actionId: 'test-3',
+        note: "11 mins ago", 
+        message: `<div style="color:orange">Text here (${Math.random()})</div>`,
+        autoCloseTime: 5000,
+        cascading: true,
+        direction: 'bottom-right',
+        closeBtnColor: '#333',
+        reverseDisplay: true
+
+    });
+};
+
+const showCustomToast4 = () => {
+    window.UixToast({
+        actionId: 'test-4',
+        title: "Note",
+        message: `<div>Text here (${Math.random()})</div>`,
+        autoCloseTime: 5000,
+        direction: 'vertical-center',
+        theme: 'light',
+        schemeBody: '',
+        closeBtnColor: '#333'
+
+    });
+};
+
+
+const showCustomToast5 = () => {
+    window.UixToast({
+        actionId: 'test-5',
+        closeDisabled: true,
+        message: `<div style="color:orange">Text here (${Math.random()})</div>`,
+        autoCloseTime: 5000,
+        direction: 'bottom-left',
+        schemeHeader: 'p-0',
+        schemeBody: 'align-items-center text-white bg-dark border-0'
+
+    });
+};
+
+const showCustomToast6 = () => {
+    window.UixToast({
+        actionId: 'test-6',
+        direction: 'top-right',
+        title: "Custom Toast 1",
+        message: `<div>Text here (${Math.random()})</div>`,
+        theme: 'success',
+        schemeHeader: 'bg-transparent text-light',
+        autoCloseTime: 3000,
+    }, () => {
+        console.log('The presentation is complete');
+    });
+};</code>
+</pre>		
+
+<p>HTML:</p>
+<pre class="uix-precode uix-t-l"><label>HTML</label><code>    &lt;button onclick="showCustomToast1()"&gt;Custom Toast 1 (Only one is shown)&lt;/button&gt;
+    &lt;button onclick="showCustomToast2()"&gt;Custom Toast 2&lt;/button&gt;
+    &lt;button onclick="showCustomToast3()"&gt;Custom Toast 3&lt;/button&gt;
+    &lt;button onclick="showCustomToast4()"&gt;Custom Toast 4&lt;/button&gt;
+    &lt;button onclick="showCustomToast5()"&gt;Custom Toast 5&lt;/button&gt;
+    &lt;button onclick="showCustomToast6()"&gt;Custom Toast 6&lt;/button&gt;
+ </code>
+</pre>		
+    
+
+
+							<hr>
+							
+							
+						</div>
+					</div>
+					<!-- .row end -->
+
+				</div>
+				<!-- .container end -->
+
+			</section>
+
+		</main>
+		
+		
+			
+        
+
+        
+        @@include('./src/components/_global/include-copyright.html')
+        
+        
+    </div>
+    <!-- .uix-wrapper end -->
+       
+<script>
+const showCustomToast1 = () => {
+
+    window.UixToast({
+        actionId: 'test-1',
+        title: "Custom Toast 1",
+        message: `<div>Text here (${Math.random()})</div>`,
+        autoCloseTime: 1000,
+        theme: 'warning',
+        schemeHeader: 'bg-transparent text-light',
+        onlyShowOne: true
+    });
+};
+
+
+const showCustomToast2 = () => {
+    window.UixToast({
+        actionId: 'test-2',
+        title: "Custom Toast 2",
+        message: `<div style="color:orange">Text here (${Math.random()})</div>`,
+        theme: "dark",
+        autoCloseTime: 5000,
+        direction: 'bottom-center',
+        schemeBody: 'align-items-center text-white border-0 p-2',
+        closeBtnColor: '#333',
+        hint: 'There are some warnings that need your attention',
+        hintAutoShow: false,
+        onClose: (currentElement, currentToastId) => {
+            console.log(currentElement, currentToastId);
+        }
+
+    });
+
+};
+
+const showCustomToast3 = () => {
+    window.UixToast({
+        actionId: 'test-3',
+        note: "11 mins ago", 
+        message: `<div style="color:orange">Text here (${Math.random()})</div>`,
+        autoCloseTime: 5000,
+        cascading: true,
+        direction: 'bottom-right',
+        closeBtnColor: '#333',
+        reverseDisplay: true
+
+    });
+};
+
+const showCustomToast4 = () => {
+    window.UixToast({
+        actionId: 'test-4',
+        title: "Note",
+        message: `<div>Text here (${Math.random()})</div>`,
+        autoCloseTime: 5000,
+        direction: 'vertical-center',
+        theme: 'light',
+        schemeBody: '',
+        closeBtnColor: '#333'
+
+    });
+};
+
+
+const showCustomToast5 = () => {
+    window.UixToast({
+        actionId: 'test-5',
+        closeDisabled: true,
+        message: `<div style="color:orange">Text here (${Math.random()})</div>`,
+        autoCloseTime: 5000,
+        direction: 'bottom-left',
+        schemeHeader: 'p-0',
+        schemeBody: 'align-items-center text-white bg-dark border-0'
+
+    });
+};
+
+const showCustomToast6 = () => {
+    window.UixToast({
+        actionId: 'test-6',
+        direction: 'top-right',
+        title: "Custom Toast 1",
+        message: `<div>Text here (${Math.random()})</div>`,
+        theme: 'success',
+        schemeHeader: 'bg-transparent text-light',
+        autoCloseTime: 3000,
+    }, () => {
+        console.log('The presentation is complete');
+    });
+};
+</script> 
+    
+
+
+    @@include('./src/components/_global/include-footer.html')
+
