@@ -7,7 +7,6 @@ import { TiLocationArrow } from "react-icons/ti";
 import { Button } from "./button";
 import { VIDEO_LINKS } from "@/constants";
 
-gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export const Hero = () => {
