@@ -5,7 +5,6 @@ import { ScrollTrigger } from "gsap/all";
 import { AnimatedTitle } from "./animated-title";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(useGSAP);
 
 export const About = () => {
   useGSAP(() => {
